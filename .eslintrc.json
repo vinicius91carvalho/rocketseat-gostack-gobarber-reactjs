@@ -29,10 +29,11 @@
         "prettier"
     ],
     "rules": {
+        "no-unused-expressions": "off",
+        "camelcase": "off",
         "react/jsx-props-no-spreading": "off",
         "react/jsx-one-expression-per-line": "off",
         "react/prop-types": "off",
-        "camelcase": "off",
         "react/jsx-indent-props": "off",
         "react/jsx-indent": "off",
         "react-hooks/rules-of-hooks": "error",
