@@ -3,13 +3,12 @@ import { FiLock } from 'react-icons/fi';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
-import { Link, useLocation, useHistory } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 import getValidationErrors from '../../utils/getValidationErrors';
 import logoImg from '../../assets/logo.svg';
 import { Container, Content, AnimationContainer, Background } from './styles';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
-import { useAuth } from '../../hooks/auth';
 import { useToast } from '../../hooks/toast';
 import api from '../../services/api';
 
@@ -25,7 +24,6 @@ function useQuery() {
 const SignIn: React.FC = () => {
     const query = useQuery();
     const formRef = useRef<FormHandles>(null);
-    const { signIn } = useAuth();
     const { addToast } = useToast();
 
     const history = useHistory();
