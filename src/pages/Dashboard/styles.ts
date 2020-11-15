@@ -45,10 +45,18 @@ export const Profile = styled.div`
         flex-direction: column;
         margin-left: 16px;
         line-height: 24px;
-    }
 
-    span {
-        color: #f4ede8;
+        span {
+            color: #f4ede8;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
     }
 
     strong {
